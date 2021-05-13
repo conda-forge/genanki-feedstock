@@ -1,5 +1,5 @@
 {% set name = "genanki" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: ced1ddcaecc37289c65c26affb20027705e3821e692327e354e0d5b9b0fd8446
+    sha256: f2be87e3c2850bba21627d26728238f9655b448e564f8c70ab47caef558b63ef
   # TODO: remove if/when https://github.com/kerrickstaley/genanki/pull/72
   - fn: {{ name }}-{{ version }}-LICENSE.txt
     url: https://raw.githubusercontent.com/kerrickstaley/{{ name }}/master/LICENSE.txt
