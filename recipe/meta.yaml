@@ -1,7 +1,7 @@
 {% set version = "0.12.0" %}
 
 package:
-  name: {{ name }}
+  name: genanki
   version: {{ version }}
 
 source:
