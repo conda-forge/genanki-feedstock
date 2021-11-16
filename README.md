@@ -1,7 +1,7 @@
 About genanki
 =============
 
-Home: http://github.com/kerrickstaley/genanki
+Home: https://github.com/kerrickstaley/genanki
 
 Package license: MIT
 
