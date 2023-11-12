@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: genanki
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/g/genanki/genanki-{{ version }}.tar.gz
-    sha256: bfacdcadd7903ed6afce6168e1977e473b431677b358f8fd42e80b48cedd19ab
+    sha256: 84d090423a8879520465bfe9784083edacb8d35e2ba511fa5a1bdef01d8f71ed
 
 build:
   number: 0
