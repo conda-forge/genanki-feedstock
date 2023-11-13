@@ -1,28 +1,29 @@
 {% set version = "0.13.1" %}
+{% set min_python = "python >=3.8" %}
 
 package:
   name: genanki
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/g/genanki/genanki-{{ version }}.tar.gz
-    sha256: 84d090423a8879520465bfe9784083edacb8d35e2ba511fa5a1bdef01d8f71ed
+  url: https://pypi.io/packages/source/g/genanki/genanki-{{ version }}.tar.gz
+  sha256: 84d090423a8879520465bfe9784083edacb8d35e2ba511fa5a1bdef01d8f71ed
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
+    - {{ min_python }}
     - pip
     - pytest-runner
-    - python >=3.6
   run:
+    - {{ min_python }}
     - cached-property
     - chevron
     - frozendict
-    - python >=3.6
     - pyyaml
 
 test:
