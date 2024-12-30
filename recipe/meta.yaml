@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/genanki/genanki-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/genanki/genanki-{{ version }}.tar.gz
   sha256: 84d090423a8879520465bfe9784083edacb8d35e2ba511fa5a1bdef01d8f71ed
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/kerrickstaley/genanki
